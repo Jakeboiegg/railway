@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dkyavcw4xycnm"]
 
 [ext_resource type="Texture2D" uid="uid://csnb55sr2hghk" path="res://bule.png" id="2_a6g4e"]
-[ext_resource type="Script" path="res://target.gd" id="3_hr2ty"]
+[ext_resource type="Script" path="res://target.gd" id="3_5xpjx"]
 [ext_resource type="Texture2D" uid="uid://ddmikp25edmbe" path="res://red.png" id="3_naks4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g7wfw"]
@@ -26,10 +26,10 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_we3bt"]
 size = Vector2(617, 593)
 
-[node name="Target" type="AnimatedSprite2D"]
+[node name="target" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_g7wfw")
 animation = &"red"
-script = ExtResource("3_hr2ty")
+script = ExtResource("3_5xpjx")
 
 [node name="Area2D" type="Area2D" parent="."]
 

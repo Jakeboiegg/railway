@@ -1,3 +1,4 @@
+
 extends Node
 @onready var collision = get_node("Area2D/CollisionShape2D")
 @onready var target = get_node(".")
@@ -7,7 +8,8 @@ var mouse_top = false
 func _ready():
 	pass # Replace with function body.
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
+	print(mouse_top)
 	if mouse_top:
 		target.play("blue")
 	else:
