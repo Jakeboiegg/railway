@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=4 uid="uid://cu5c3rpbhxv3m"]
 
-[ext_resource type="PackedScene" uid="uid://cbqp2gjh6m4t5" path="res://scenes/taro.tscn" id="1_2bugk"]
 [ext_resource type="Texture2D" uid="uid://bst5gu3yycf0x" path="res://assets/tilemap.png" id="3_4v3kr"]
+[ext_resource type="PackedScene" uid="uid://cjde54bf56ld7" path="res://scenes/boy.tscn" id="3_5vdj6"]
 [ext_resource type="PackedScene" uid="uid://dk5kp14xrd6un" path="res://scenes/target.tscn" id="3_kg3qe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jd0k0"]
@@ -138,15 +138,6 @@ sources/1 = SubResource("TileSetAtlasSource_jd0k0")
 
 [node name="Game" type="Node"]
 
-[node name="Taro" parent="." instance=ExtResource("1_2bugk")]
-position = Vector2(21, -15)
-SPEED = 100.0
-
-[node name="Camera2D" type="Camera2D" parent="Taro"]
-visible = false
-position = Vector2(0, -29)
-zoom = Vector2(5, 5)
-
 [node name="target" parent="." instance=ExtResource("3_kg3qe")]
 position = Vector2(-55, -63)
 scale = Vector2(0.152344, 0.109375)
@@ -154,3 +145,11 @@ scale = Vector2(0.152344, 0.109375)
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAD//wAAAQAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAACAAAAAQAAAAAAAAADAAAAAQAAAAAAAAAEAAAAAQAAAAAAAAAFAAAAAQAAAAAAAAD+/wAAAQAAAAAAAAD9/wAAAQAAAAAAAAAGAAAAAQAAAAAAAAD9/wEAAQABAAEAAAD+/wEAAQABAAEAAAD//wEAAQABAAEAAAAAAAEAAQABAAEAAAABAAIAAQABAAIAAAACAAIAAQABAAIAAAACAAEAAQABAAEAAAADAAEAAQABAAEAAAAEAAEAAQABAAEAAAAFAAEAAQABAAEAAAAGAAEAAQABAAEAAAABAAEAAQABAAEAAAD9/wIAAQABAAIAAAD+/wIAAQABAAIAAAD//wIAAQABAAIAAAAAAAIAAQABAAIAAAADAAIAAQABAAIAAAAEAAIAAQABAAIAAAAFAAIAAQABAAIAAAAGAAIAAQABAAIAAAAHAAAAAQAAAAAAAAAIAAAAAQAAAAAAAAAJAAAAAQAAAAAAAAAKAAAAAQAAAAAAAAALAAAAAQAAAAAAAAAMAAAAAQAAAAAAAAANAAAAAQAAAAAAAAAOAAAAAQAAAAAAAAAPAAAAAQAAAAAAAAAQAAAAAQAAAAAAAAD8/wAAAQAAAAAAAAD7/wAAAQAAAAAAAAD6/wAAAQAAAAAAAAD5/wAAAQAAAAAAAAD4/wAAAQAAAAAAAAD3/wAAAQAAAAAAAAD2/wAAAQAAAAAAAAD1/wAAAQAAAAAAAAD0/wAAAQAAAAAAAADz/wAAAQAAAAAAAADy/wAAAQAAAAAAAADx/wAAAQAAAAAAAADw/wAAAQAAAAAAAADw//z/AQAAAAAAAADw//3/AQAAAAAAAADw//7/AQAAAAAAAADw////AQAAAAAAAAAQAP3/AQAAAAAAAAAQAP7/AQAAAAAAAAAQAP//AQAAAAAAAAA=")
 tile_set = SubResource("TileSet_fpbjh")
+
+[node name="boy" parent="." instance=ExtResource("3_5vdj6")]
+position = Vector2(51, -23)
+
+[node name="Camera2D" type="Camera2D" parent="boy"]
+visible = false
+position = Vector2(-30, -21)
+zoom = Vector2(5, 5)
