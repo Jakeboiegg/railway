@@ -3,7 +3,7 @@ extends Node
 @onready var suitcase_ui: ReferenceRect = $suitcase_texture_ref
 var inventory = false
 
-func _init() -> void:
+func _ready() -> void:
 	suitcase_ui.visible = false
 
 func _process(_delta: float) -> void:

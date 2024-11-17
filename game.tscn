@@ -170,6 +170,7 @@ border_color = Color(0.720288, 0.464714, 0.317491, 1)
 metadata/_edit_lock_ = true
 
 [node name="suitcase_background" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref"]
+layout_mode = 0
 offset_top = 12.0
 offset_right = 176.0
 offset_bottom = 124.0
@@ -177,12 +178,14 @@ color = Color(0.828428, 0.343386, 0.255548, 1)
 metadata/_edit_lock_ = true
 
 [node name="item_image" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref"]
+layout_mode = 0
 offset_left = 9.0
 offset_top = 21.0
 offset_right = 69.0
 offset_bottom = 81.0
 
 [node name="item_desc" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref"]
+layout_mode = 0
 offset_left = 74.0
 offset_top = 21.0
 offset_right = 167.0
