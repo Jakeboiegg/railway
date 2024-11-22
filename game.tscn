@@ -156,7 +156,6 @@ visible = false
 offset_right = 256.0
 offset_bottom = 144.0
 border_color = Color(0.67158, 0.335321, 0.950431, 1)
-metadata/_edit_lock_ = true
 
 [node name="suitcase" type="Node" parent="UI"]
 script = ExtResource("3_ei05f")
