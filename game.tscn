@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=4 uid="uid://cu5c3rpbhxv3m"]
+[gd_scene load_steps=8 format=4 uid="uid://cu5c3rpbhxv3m"]
 
 [ext_resource type="Texture2D" uid="uid://bst5gu3yycf0x" path="res://assets/tilemap.png" id="3_4v3kr"]
 [ext_resource type="PackedScene" uid="uid://cjde54bf56ld7" path="res://scenes/boy.tscn" id="3_5vdj6"]
 [ext_resource type="Script" path="res://suitcase.gd" id="3_ei05f"]
+[ext_resource type="Texture2D" uid="uid://62xjjmlbwm74" path="res://assets/suitcase/suitcase.png" id="4_ylduw"]
+[ext_resource type="Texture2D" uid="uid://bbhuspukxg7do" path="res://assets/16x16_test_images/yellow.png" id="5_nl4r2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jd0k0"]
 texture = ExtResource("3_4v3kr")
@@ -169,14 +171,15 @@ border_color = Color(0.720288, 0.464714, 0.317491, 1)
 metadata/_edit_lock_ = true
 
 [node name="suitcase_background" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref"]
+visible = false
 layout_mode = 0
 offset_top = 12.0
 offset_right = 176.0
 offset_bottom = 124.0
 color = Color(0.828428, 0.343386, 0.255548, 1)
-metadata/_edit_lock_ = true
 
 [node name="item_image" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref"]
+visible = false
 layout_mode = 0
 offset_left = 9.0
 offset_top = 21.0
@@ -184,6 +187,7 @@ offset_right = 69.0
 offset_bottom = 81.0
 
 [node name="item_desc" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref"]
+visible = false
 layout_mode = 0
 offset_left = 74.0
 offset_top = 21.0
@@ -191,11 +195,16 @@ offset_right = 167.0
 offset_bottom = 81.0
 
 [node name="items" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref"]
+visible = false
 layout_mode = 0
 offset_left = 9.0
 offset_top = 86.0
 offset_right = 167.0
 offset_bottom = 115.0
+
+[node name="suitcase_background2" type="Sprite2D" parent="UI/suitcase/suitcase_texture_ref"]
+texture = ExtResource("4_ylduw")
+centered = false
 
 [node name="items_view" type="ScrollContainer" parent="UI/suitcase"]
 offset_left = 57.0
@@ -209,3 +218,10 @@ layout_mode = 2
 theme_override_constants/h_separation = 2
 theme_override_constants/v_separation = 2
 columns = 8
+
+[node name="select_indicator" type="TextureRect" parent="UI/suitcase"]
+offset_left = 4.0
+offset_top = 75.0
+offset_right = 20.0
+offset_bottom = 91.0
+texture = ExtResource("5_nl4r2")
