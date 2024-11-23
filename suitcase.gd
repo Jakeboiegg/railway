@@ -1,7 +1,7 @@
 extends Node
 
 # nodes here
-@onready var suitcase_background: ReferenceRect = $suitcase_texture_ref
+@onready var suitcase_background: TextureRect = $suitcase_texture_ref/suitcase_background
 @onready var items_view: ScrollContainer = $items_view
 @onready var grid_container: GridContainer = $items_view/GridContainer
 @onready var scroll_container: ScrollContainer = $items_view
@@ -93,8 +93,6 @@ func suitcase_ui_visibility(visibility : bool) -> void:
   grid_container.visible = visibility
   highlight_node.visible = visibility
 
-
-    
 func _ready() -> void:
   suitcase_ui_visibility(false)
 

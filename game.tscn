@@ -170,41 +170,42 @@ offset_bottom = 134.0
 border_color = Color(0.720288, 0.464714, 0.317491, 1)
 metadata/_edit_lock_ = true
 
-[node name="suitcase_background" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref"]
-visible = false
+[node name="suitcase_background" type="TextureRect" parent="UI/suitcase/suitcase_texture_ref"]
 layout_mode = 0
-offset_top = 12.0
 offset_right = 176.0
-offset_bottom = 124.0
+offset_bottom = 123.0
+texture = ExtResource("4_ylduw")
+
+[node name="old_design_stuff" type="Node" parent="UI/suitcase/suitcase_texture_ref"]
+
+[node name="suitcase_background" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref/old_design_stuff"]
+visible = false
+offset_left = 40.0
+offset_top = 22.0
+offset_right = 216.0
+offset_bottom = 134.0
 color = Color(0.828428, 0.343386, 0.255548, 1)
 
-[node name="item_image" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref"]
+[node name="item_image" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref/old_design_stuff"]
 visible = false
-layout_mode = 0
-offset_left = 9.0
-offset_top = 21.0
-offset_right = 69.0
-offset_bottom = 81.0
+offset_left = 49.0
+offset_top = 31.0
+offset_right = 109.0
+offset_bottom = 91.0
 
-[node name="item_desc" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref"]
+[node name="item_desc" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref/old_design_stuff"]
 visible = false
-layout_mode = 0
-offset_left = 74.0
-offset_top = 21.0
-offset_right = 167.0
-offset_bottom = 81.0
+offset_left = 114.0
+offset_top = 31.0
+offset_right = 207.0
+offset_bottom = 91.0
 
-[node name="items" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref"]
+[node name="items" type="ColorRect" parent="UI/suitcase/suitcase_texture_ref/old_design_stuff"]
 visible = false
-layout_mode = 0
-offset_left = 9.0
-offset_top = 86.0
-offset_right = 167.0
-offset_bottom = 115.0
-
-[node name="suitcase_background2" type="Sprite2D" parent="UI/suitcase/suitcase_texture_ref"]
-texture = ExtResource("4_ylduw")
-centered = false
+offset_left = 49.0
+offset_top = 96.0
+offset_right = 207.0
+offset_bottom = 125.0
 
 [node name="items_view" type="ScrollContainer" parent="UI/suitcase"]
 offset_left = 57.0
