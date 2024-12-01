@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dk5kp14xrd6un"]
 
-[ext_resource type="Texture2D" uid="uid://bk6v05gul7s4g" path="res://assets/bule.png" id="1_1rt21"]
-[ext_resource type="Texture2D" uid="uid://bb8yrf318iknq" path="res://assets/red.png" id="2_yli8s"]
+[ext_resource type="Texture2D" path="res://assets/bule.png" id="1_1rt21"]
+[ext_resource type="Texture2D" path="res://assets/red.png" id="2_yli8s"]
 [ext_resource type="Script" path="res://target.gd" id="3_5xpjx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g7wfw"]

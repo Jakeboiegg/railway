@@ -1,15 +1,14 @@
-[gd_scene load_steps=10 format=4 uid="uid://cu5c3rpbhxv3m"]
+[gd_scene load_steps=9 format=4 uid="uid://cu5c3rpbhxv3m"]
 
-[ext_resource type="Texture2D" uid="uid://bst5gu3yycf0x" path="res://assets/tilemap.png" id="3_4v3kr"]
+[ext_resource type="Texture2D" uid="uid://btlk7ls21vxh3" path="res://assets/tiles/tilemap.png" id="1_s6kj2"]
 [ext_resource type="PackedScene" uid="uid://cjde54bf56ld7" path="res://scenes/boy.tscn" id="3_5vdj6"]
 [ext_resource type="Script" path="res://suitcase.gd" id="3_ei05f"]
 [ext_resource type="Texture2D" uid="uid://62xjjmlbwm74" path="res://assets/suitcase/suitcase.png" id="4_ylduw"]
-[ext_resource type="FontFile" uid="uid://d1gj7dwl13gil" path="res://assets/m5x7.ttf" id="5_driyc"]
 [ext_resource type="FontFile" uid="uid://bwvf7ofnxjjlf" path="res://assets/fonts/m5x7.ttf" id="6_xaisc"]
 [ext_resource type="Texture2D" uid="uid://dltx0m23fl5m4" path="res://assets/suitcase/selected.png" id="7_aj1s3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jd0k0"]
-texture = ExtResource("3_4v3kr")
+texture = ExtResource("1_s6kj2")
 margins = Vector2i(1, 1)
 separation = Vector2i(1, 1)
 0:0/0 = 0
@@ -185,7 +184,7 @@ offset_top = 20.0
 offset_right = 163.0
 offset_bottom = 33.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("5_driyc")
+theme_override_fonts/normal_font = ExtResource("6_xaisc")
 theme_override_font_sizes/normal_font_size = 16
 text = "skibidy toilet"
 

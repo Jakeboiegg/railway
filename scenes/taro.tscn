@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cbqp2gjh6m4t5"]
 
 [ext_resource type="Script" path="res://taro.gd" id="1_gm1lg"]
-[ext_resource type="Texture2D" uid="uid://ddxodp78w4hvg" path="res://assets/tano.png" id="2_jftda"]
+[ext_resource type="Texture2D" path="res://assets/tano.png" id="2_jftda"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_33f2b"]
 radius = 13.0
